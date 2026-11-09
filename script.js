@@ -38,4 +38,8 @@ let gtagButton = document.getElementById("gtag-btn");
 
 gtagButton.addEventListener("click", function(){
 	console.log("gtag clicked");
-})
+	gtag("event","purchase", {
+		currency: "EUR",
+		value: 25
+	})
+});
